@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-29",
+  "platform": "Apple Silicon macOS arm64",
+  "cpu_tests": {
+    "fortran_integer_bytes_8_system_cblas": "passed",
+    "fortran_integer_bytes_4_reference_gemm": "passed",
+    "snapshot_rewrite_tests": "passed, including no-overwrite and original-source preservation"
+  },
+  "original_fortran_oracles": [
+    {
+      "backend": "cpu",
+      "integer_bytes": 8,
+      "original_fortran_comparison_cases": 135,
+      "max_scaled_error": 4.975307887132661e-16,
+      "scope": "Dirac d1/d2/d3 and DGEMM, including C++ Fortran ABI"
+    },
+    {
+      "backend": "cpu",
+      "integer_bytes": 4,
+      "original_fortran_comparison_cases": 135,
+      "max_scaled_error": 4.485760365197485e-16,
+      "scope": "Dirac d1/d2/d3 and DGEMM, including C++ Fortran ABI"
+    }
+  ],
+  "source_audit": {
+    "source_files_audited": 22955,
+    "changed_fortran_files_verified": 7447,
+    "original_files_preserved": true,
+    "fixed_form_line_lengths_preserved": true
+  },
+  "cuda_configuration": {
+    "status": "unavailable",
+    "observed_error": "Failed to find nvcc"
+  },
+  "cuda_compilation": "not validated",
+  "cuda_execution": "not validated",
+  "full_nwchem_build": "not validated",
+  "full_nwchem_QA": "not validated",
+  "application_speedup": "not measured"
+}
