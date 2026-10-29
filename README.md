@@ -6,7 +6,7 @@ The full original application still needs Fortran, MPI, Global Arrays, BLAS and
 LAPACK. No end-to-end speedup has been measured, and the modified full NWChem
 executable has not yet been built or validated.
 
-All work is contained here. The original `../src`, inputs, and existing tutorials
+All work now is contained here. The original `../src`, inputs, and existing tutorials
 are unchanged.
 
 | Location | Contents |
